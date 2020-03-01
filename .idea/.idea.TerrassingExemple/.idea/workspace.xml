@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8e3b00d1-547d-4281-adb5-3c60a10971ec" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DCD17FFD-E1A4-4168-972A-E21049DE1947/9e/8e272370/RenderBounds.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrassingMapBuildSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.6.0-preview.24/Unity.Entities/IJobChunk.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrassing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapPointBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.rendering.hybrid@0.3.4-preview.24/Unity.Rendering.Hybrid/RenderMeshProxy.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrassingMapInitializeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndlessSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.6.0-preview.24/Unity.Entities/IJobForEach.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndlessSettings.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/NewBehaviourScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapInitializeSystem'.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MapPointBuffer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GridGenerator.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapManagerEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapSettingScriptableObject.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapSettingsEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndlesssystemSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndlessSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndlessSystemSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MapSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/EndlessSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapInitializeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Terrassing.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapBuildSystem.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YU1kroY2xvi0NpNDThJS50T4ol" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="Rider.SolutionExplorerActivator" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e3b00d1-547d-4281-adb5-3c60a10971ec" name="Default Changelist" comment="" />
+      <created>1582982506083</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582982506083</updated>
+      <workItem from="1582982513331" duration="851000" />
+      <workItem from="1582983432614" duration="4692000" />
+      <workItem from="1582988199962" duration="3911000" />
+      <workItem from="1582992533870" duration="10653000" />
+      <workItem from="1583011561094" duration="579000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="WindowStateProjectService">
+    <state x="346" y="141" key="#Inspection_severity" timestamp="1582983569325">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="346" y="141" key="#Inspection_severity/0.0.1440.900@0.0.1440.900" timestamp="1582983569325" />
+    <state x="249" y="1" key="SettingsEditor" timestamp="1582991128257">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="213" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582983331974" />
+    <state x="249" y="1" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582991128257" />
+  </component>
+</project>

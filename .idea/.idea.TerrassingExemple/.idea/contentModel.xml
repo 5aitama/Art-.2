@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$PROJECT_DIR$" t="IncludeRecursive">
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="EndlessSettings.cs" t="Include" />
+          <e p="EndlessSystem.cs" t="Include" />
+          <e p="GameSettings.cs" t="Include" />
+          <e p="GridGenerator.cs" t="Include" />
+          <e p="MapPointBuffer.cs" t="Include" />
+          <e p="MapSettings.cs" t="Include" />
+          <e p="Terrassing.cs" t="Include" />
+          <e p="TerrassingMapBuildSystem.cs" t="Include" />
+          <e p="TerrassingMapInitializeSystem.cs" t="Include" />
+        </e>
+      </e>
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp/bin" t="ExcludeRecursive" />
+      <e p="TerrassingExemple.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_TerrassingExemple.432169534.00" t="ExcludeRecursive" />
+  </component>
+</project>
