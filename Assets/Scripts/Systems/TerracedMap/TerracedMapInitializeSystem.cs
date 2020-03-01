@@ -5,7 +5,7 @@ using Unity.Transforms;
 using Unity.Collections;
 using Unity.Mathematics;
 
-public class TerrassingMapInitializeSystem : JobComponentSystem
+public class TerracedMapInitializeSystem : JobComponentSystem
 {
     [BurstCompile]
     private struct InitializeMapBufferJob : IJobParallelFor
@@ -55,8 +55,8 @@ public class TerrassingMapInitializeSystem : JobComponentSystem
         {
             var buffer = commandBuffer.AddBuffer<T>(entity);
             buffer.AddRange(bufferArray);
-            commandBuffer.RemoveComponent<TagTerrassingMapNeedInitialize>(entity);
-            commandBuffer.AddComponent<TagTerrassingMapNeedBuild>(entity);
+            commandBuffer.RemoveComponent<TagTerracedMapNeedInitialize>(entity);
+            commandBuffer.AddComponent<TagTerracedMapNeedBuild>(entity);
         }
     }
 
@@ -83,7 +83,7 @@ public class TerrassingMapInitializeSystem : JobComponentSystem
         {
             All = new ComponentType[]
             {
-                typeof(TagTerrassingMapNeedInitialize)
+                typeof(TagTerracedMapNeedInitialize)
             }
         };
 

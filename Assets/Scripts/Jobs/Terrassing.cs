@@ -4,10 +4,10 @@ using Unity.Burst;
 using Unity.Collections;
 using Unity.Entities;
 
-public static class Terrassing
+public static class Terraced
 {
     [BurstCompile]
-    public struct TerrassingJob : IJob
+    public struct TerracedJob : IJob
     {
         [ReadOnly][DeallocateOnJobCompletion] 
         public NativeArray<int>    indices;
@@ -36,11 +36,11 @@ public static class Terrassing
                 float3 b = vertices[indices[index + 1]] + new float3(0, buffer[indices[index + 1]].Height, 0);
                 float3 c = vertices[indices[index + 2]] + new float3(0, buffer[indices[index + 2]].Height, 0);
 
-                l = TerrassingTriangle(a, b, c, ref v, ref u, ref i, l);
+                l = TerracedTriangle(a, b, c, ref v, ref u, ref i, l);
             }
         }
     }
-    public static int TerrassingTriangle(float3 a, float3 b, float3 c, ref NativeList<float3> v, ref NativeList<float2> u, ref NativeList<int> t, int tindex, float step = 0.5f)
+    public static int TerracedTriangle(float3 a, float3 b, float3 c, ref NativeList<float3> v, ref NativeList<float2> u, ref NativeList<int> t, int tindex, float step = 0.5f)
     {
         // Minimum height value
         float minHeight = math.floor(math.min(a.y, math.min(b.y, c.y)));

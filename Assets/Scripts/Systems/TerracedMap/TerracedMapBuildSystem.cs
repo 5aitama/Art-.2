@@ -8,11 +8,11 @@ using Unity.Collections;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class TerrassingMapBuildSystem : ComponentSystem
+public class TerracedMapBuildSystem : ComponentSystem
 {
     protected override void OnUpdate()
     {
-        Entities.WithAll<TagTerrassingMapNeedBuild>().ForEach((Entity entity) =>
+        Entities.WithAll<TagTerracedMapNeedBuild>().ForEach((Entity entity) =>
         {
             EntityManager.AddComponent<LocalToWorld>(entity);
 
@@ -44,7 +44,7 @@ public class TerrassingMapBuildSystem : ComponentSystem
                 GridSize    = GameSettings.MapSettingsInstance.mapSize,
             }.Schedule();
 
-            handle = new Terrassing.TerrassingJob
+            handle = new Terraced.TerracedJob
             {
                 uvs      = uvs,
                 indices  = indices,
@@ -81,7 +81,7 @@ public class TerrassingMapBuildSystem : ComponentSystem
                 layer           = 0
             });
 
-            EntityManager.RemoveComponent<TagTerrassingMapNeedBuild>(entity);
+            EntityManager.RemoveComponent<TagTerracedMapNeedBuild>(entity);
         });
     }
 }

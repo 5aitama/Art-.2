@@ -125,7 +125,7 @@ public class EndlessSystem : ComponentSystem
     /// <returns></returns>
     private Entity CreateChunkEntity(float3 position)
     {
-        var entity = EntityManager.CreateEntity(typeof(Translation), typeof(Rotation), typeof(TagTerrassingMapNeedInitialize));
+        var entity = EntityManager.CreateEntity(typeof(Translation), typeof(Rotation), typeof(TagTerracedMapNeedInitialize));
         
         EntityManager.SetComponentData(entity, new Translation { Value = position });
         EntityManager.SetComponentData(entity, new Rotation { Value = quaternion.Euler(0) });

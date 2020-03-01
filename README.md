@@ -1,6 +1,6 @@
 ![Header](/Images/Header.png)
 # Art .2
-A terrassing like procedural terrain made with **Unity** & **DOTS**.
+A terraced like procedural terrain made with **Unity** & **DOTS**.
 
 ## Description
 In this project, the player was in infinite world.
