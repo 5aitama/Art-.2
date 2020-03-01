@@ -130,7 +130,7 @@ public class EndlessSystem : ComponentSystem
         EntityManager.SetComponentData(entity, new Translation { Value = position });
         EntityManager.SetComponentData(entity, new Rotation { Value = quaternion.Euler(0) });
 
-        EntityManager.SetName(entity, $"Chunk [{position}]");
+        // EntityManager.SetName(entity, $"Chunk [{position}]");
 
         return entity;
     }
