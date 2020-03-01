@@ -21,6 +21,16 @@ public class MapSettings : ScriptableObject
     public float noiseAmplitude = 8f;
 
     /// <summary>
+    /// Persistence of noise.
+    /// </summary>
+    public float noisePersistence = 1f;
+
+    /// <summary>
+    /// Octaves of noise
+    /// </summary>
+    public int noiseOctaves = 4;
+
+    /// <summary>
     /// Position of noise.
     /// </summary>
     public float2 noisePosition = 0f;

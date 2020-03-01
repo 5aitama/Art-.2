@@ -13,6 +13,8 @@ public class TerracedMapInitializeSystem : JobComponentSystem
         [ReadOnly] public int MapWidth;
         [ReadOnly] public float Frequency;
         [ReadOnly] public float Amplitude;
+        [ReadOnly] public float Persistence;
+        [ReadOnly] public int Octaves;
         [ReadOnly] public float2 NoisePosition;
 
         [WriteOnly] public NativeArray<MapPointBuffer> MapPoints;
@@ -25,7 +27,11 @@ public class TerracedMapInitializeSystem : JobComponentSystem
             var position = new float2(x, y);
             var noisePosition = position + NoisePosition;
 
-            var noiseValue = noise.snoise(noisePosition * Frequency);
+            // var noiseValue = noise.snoise(noisePosition * Frequency);
+            // noiseValue = (noiseValue + 1f) / 2f;
+            // noiseValue *= Amplitude;
+
+            var noiseValue = OctavePerlin(noisePosition, Frequency, Amplitude, Octaves, Persistence);
             noiseValue *= Amplitude;
 
             MapPoints[index] = new MapPointBuffer
@@ -33,6 +39,23 @@ public class TerracedMapInitializeSystem : JobComponentSystem
                 Height = noiseValue,
                 Position = position,
             };
+        }
+
+        public float OctavePerlin(float2 position, float frequency, float amplitude, int octaves, float persistence) {
+            var total = 0f;
+            var maxValue = 0f;
+            for(var i = 0; i < octaves; i++) 
+            {
+                float n = noise.snoise(position * frequency);
+                n = (n + 1f) / 2f;
+                n *= amplitude;
+                total += n;
+                maxValue += amplitude;
+                amplitude *= persistence;
+                frequency *= 2;
+            }
+            
+            return total/maxValue;
         }
     }
 
@@ -75,9 +98,12 @@ public class TerracedMapInitializeSystem : JobComponentSystem
 
         var mapSize = GameSettings.MapSettingsInstance.mapSize;
         var mapArea = GameSettings.MapSettingsInstance.MapArea;
-        var noiseFrequency = GameSettings.MapSettingsInstance.noiseFrequency;
-        var noiseAmplitude = GameSettings.MapSettingsInstance.noiseAmplitude;
-        var noisePosition = GameSettings.MapSettingsInstance.noisePosition;
+
+        var noiseFrequency      = GameSettings.MapSettingsInstance.noiseFrequency;
+        var noiseAmplitude      = GameSettings.MapSettingsInstance.noiseAmplitude;
+        var noisePosition       = GameSettings.MapSettingsInstance.noisePosition;
+        var noisePersistence    = GameSettings.MapSettingsInstance.noisePersistence;
+        var noiseOctaves        = GameSettings.MapSettingsInstance.noiseOctaves;
 
         var query = new EntityQueryDesc
         {
@@ -104,6 +130,8 @@ public class TerracedMapInitializeSystem : JobComponentSystem
                 MapWidth        = mapSize,
                 Frequency       = noiseFrequency,
                 Amplitude       = noiseAmplitude,
+                Persistence     = noisePersistence,
+                Octaves         = noiseOctaves,
                 NoisePosition   = noisePosition + transform.xz,
             }.Schedule(mapPointBuffers.Length, 32, handle);
 

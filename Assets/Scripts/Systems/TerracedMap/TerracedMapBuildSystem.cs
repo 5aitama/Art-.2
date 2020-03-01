@@ -50,6 +50,8 @@ public class TerracedMapBuildSystem : ComponentSystem
                 indices  = indices,
                 vertices = vertices,
                 
+                maxHeight = (int)GameSettings.MapSettingsInstance.noiseAmplitude,
+
                 entity = entity,
                 bufferFromEntity = GetBufferFromEntity<MapPointBuffer>(),
 

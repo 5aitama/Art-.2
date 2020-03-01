@@ -25,6 +25,8 @@ public static class Terraced
         [ReadOnly] public Entity entity;
         [ReadOnly] public BufferFromEntity<MapPointBuffer> bufferFromEntity;
 
+        [ReadOnly] public int maxHeight;
+
         public void Execute()
         {
             var buffer = bufferFromEntity[entity];
@@ -36,12 +38,14 @@ public static class Terraced
                 float3 b = vertices[indices[index + 1]] + new float3(0, buffer[indices[index + 1]].Height, 0);
                 float3 c = vertices[indices[index + 2]] + new float3(0, buffer[indices[index + 2]].Height, 0);
 
-                l = TerracedTriangle(a, b, c, ref v, ref u, ref i, l);
+                l = TerracedTriangle(a, b, c, ref v, ref u, ref i, l, maxHeight);
             }
         }
     }
-    public static int TerracedTriangle(float3 a, float3 b, float3 c, ref NativeList<float3> v, ref NativeList<float2> u, ref NativeList<int> t, int tindex, float step = 0.5f)
+    public static int TerracedTriangle(float3 a, float3 b, float3 c, ref NativeList<float3> v, ref NativeList<float2> u, ref NativeList<int> t, int tindex, int maxAmplitude, float step = 0.5f)
     {
+        float uvY = 1f / maxAmplitude;
+
         // Minimum height value
         float minHeight = math.floor(math.min(a.y, math.min(b.y, c.y)));
 
@@ -53,6 +57,10 @@ public static class Terraced
 
         for (float i = minHeight; i <= maxHeight; i++)
         {
+            float2 uv00 = new float2(0f, uvY * i                );
+            float2 uv01 = new float2(0f, uvY * i + (uvY * 0.95f));
+            float2 uv11 = new float2(1f, uvY * i + (uvY * 0.95f));
+
             int state;
 
             // Find how many points are above or below the slice
@@ -163,9 +171,9 @@ public static class Terraced
                 t.Add(1 + tCount);
                 t.Add(2 + tCount);
 
-                u.Add(new float2(0, 0));
-                u.Add(new float2(0, 1));
-                u.Add(new float2(1, 1));
+                u.Add(uv00);
+                u.Add(uv01);
+                u.Add(uv11);
 
                 tCount += 3;
             }
@@ -201,9 +209,9 @@ public static class Terraced
                     t.Add(3 + tCount); t.Add(4 + tCount); t.Add(5 + tCount);
                     t.Add(6 + tCount); t.Add(7 + tCount); t.Add(8 + tCount);
 
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
 
                     tCount += 9;
                 }
@@ -219,10 +227,10 @@ public static class Terraced
                     t.Add(6 + tCount); t.Add( 7 + tCount); t.Add(8 + tCount);
                     t.Add(9 + tCount); t.Add(10 + tCount); t.Add(11 + tCount);
 
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
-                    u.Add(new float2(0, 0)); u.Add(new float2(0, 1)); u.Add(new float2(1, 1));
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
+                    u.Add(uv00); u.Add(uv01); u.Add(uv11);
 
                     tCount += 12;
                 }
