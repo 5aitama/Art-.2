@@ -17,6 +17,9 @@ public class EndlessSystem : ComponentSystem
 
     protected override void OnUpdate()
     {
+        if(!GameSettings.EndlessSettingsInstance.isActivated)
+            return;
+        
         var mainCamera = Camera.main;
 
         var mapSize = GameSettings.MapSettingsInstance.mapSize - 1;
@@ -125,7 +128,11 @@ public class EndlessSystem : ComponentSystem
     /// <returns></returns>
     private Entity CreateChunkEntity(float3 position)
     {
-        var entity = EntityManager.CreateEntity(typeof(Translation), typeof(Rotation), typeof(TagTerracedMapNeedInitialize));
+        var entity = EntityManager.CreateEntity(
+            typeof(Rotation),
+            typeof(Translation),
+            typeof(TagHexMap),
+            typeof(TagHexMapNeedInitialize));
         
         EntityManager.SetComponentData(entity, new Translation { Value = position });
         EntityManager.SetComponentData(entity, new Rotation { Value = quaternion.Euler(0) });

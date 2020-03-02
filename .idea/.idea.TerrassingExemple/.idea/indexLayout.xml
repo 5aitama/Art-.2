@@ -15,11 +15,15 @@
       <Path>Library/PackageCache/com.unity.mathematics@1.1.0</Path>
       <Path>Library/PackageCache/com.unity.nuget.newtonsoft-json@1.1.2</Path>
       <Path>Library/PackageCache/com.unity.platforms@0.2.1-preview.1</Path>
+      <Path>Library/PackageCache/com.unity.postprocessing@2.3.0</Path>
       <Path>Library/PackageCache/com.unity.properties@0.10.4-preview</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.core@7.1.8</Path>
+      <Path>Library/PackageCache/com.unity.render-pipelines.universal@7.1.8</Path>
       <Path>Library/PackageCache/com.unity.rendering.hybrid@0.3.4-preview.24</Path>
       <Path>Library/PackageCache/com.unity.scriptablebuildpipeline@1.6.3-preview</Path>
       <Path>Library/PackageCache/com.unity.searcher@4.0.9</Path>
       <Path>Library/PackageCache/com.unity.serialization@0.6.4-preview</Path>
+      <Path>Library/PackageCache/com.unity.shadergraph@7.1.8</Path>
       <Path>Library/PackageCache/com.unity.test-framework.performance@1.3.3-preview</Path>
       <Path>Library/PackageCache/com.unity.test-framework@1.1.11</Path>
       <Path>Library/PackageCache/com.unity.textmeshpro@2.0.1</Path>
@@ -29,8 +33,10 @@
       <Path>ProjectSettings</Path>
     </explicitIncludes>
     <explicitExcludes>
+      <Path>.git</Path>
       <Path>.idea</Path>
       <Path>.vscode</Path>
+      <Path>Images</Path>
       <Path>Library</Path>
       <Path>Logs</Path>
       <Path>Temp</Path>

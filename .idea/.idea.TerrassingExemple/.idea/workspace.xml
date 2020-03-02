@@ -1,26 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8e3b00d1-547d-4281-adb5-3c60a10971ec" name="Default Changelist" comment="" />
+    <list default="true" id="8e3b00d1-547d-4281-adb5-3c60a10971ec" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TerrassingExemple/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Default Map Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Default Map Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Terraced.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Terraced.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jobs/Terrassing.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jobs/Terrassing.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Scriptable/EndlessSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Scriptable/EndlessSettings.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/Endless/EndlessSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/Endless/EndlessSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Systems/TerracedMap/TerracedMapInitializeSystem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Systems/TerracedMap/TerracedMapInitializeSystem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Endless Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Endless Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Map Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Map Settings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/InputManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/DCD17FFD-E1A4-4168-972A-E21049DE1947/9e/8e272370/RenderBounds.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrassingMapBuildSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexCell.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/Endless/EndlessSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Hexagon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TerracedMap/TerracedMapBuildSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/TerracedMap/TerracedMapInitializeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.6.0-preview.24/Unity.Entities/IJobChunk.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Terrassing.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapPointBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.rendering.hybrid@0.3.4-preview.24/Unity.Rendering.Hybrid/RenderMeshProxy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GridGenerator.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrassingMapInitializeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndlessSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MapSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Buffers/HexCellDataBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMap.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jobs/Terrassing.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/HexMap/HexMapInitializeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/HexagonTest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Buffers/HexCellBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.entities@0.6.0-preview.24/Unity.Entities/IJobForEach.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameSettings.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EndlessSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMapNeedInitialize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Systems/HexMap/HexMapBuildSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Buffers/MapPointBuffer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMapNeedBuild.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,10 +69,27 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapInitializeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Terrassing.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TerrassingMapBuildSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MonoBehaviours/HexagonTest.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Hexagon.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Buffers/HexCellBuffer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexCell.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HexMap.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMapNeedInitialize.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Tags/TagHexMapNeedBuild.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Buffers/HexCellHeightBuffer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Components/Buffers/HexCellDataBuffer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jobs/Terrassing.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/HexMap/HexMapBuildSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/Endless/EndlessSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Systems/HexMap/HexMapInitializeSystem.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1YU1kroY2xvi0NpNDThJS50T4ol" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -57,8 +99,9 @@
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -89,6 +132,8 @@
       <workItem from="1582988199962" duration="3911000" />
       <workItem from="1582992533870" duration="10653000" />
       <workItem from="1583011561094" duration="579000" />
+      <workItem from="1583162626410" duration="6483000" />
+      <workItem from="1583180865269" duration="3570000" />
     </task>
     <servers />
   </component>
@@ -97,15 +142,28 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="346" y="141" key="#Inspection_severity" timestamp="1582983569325">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="346" y="141" key="#Inspection_severity/0.0.1440.900@0.0.1440.900" timestamp="1582983569325" />
-    <state x="249" y="1" key="SettingsEditor" timestamp="1582991128257">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="213" y="1" key="SettingsEditor" timestamp="1583180994085">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="213" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1582983331974" />
+    <state x="213" y="1" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1583180994085" />
     <state x="249" y="1" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1582991128257" />
   </component>
 </project>

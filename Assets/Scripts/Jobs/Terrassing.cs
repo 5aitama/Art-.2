@@ -31,35 +31,71 @@ public static class Terraced
         {
             var buffer = bufferFromEntity[entity];
             
-            int l = 0;
-            for (int index = 0; index < indices.Length; index += 3)
+            var l = 0;
+            for (var index = 0; index < indices.Length; index += 3)
             {
-                float3 a = vertices[indices[index    ]] + new float3(0, buffer[indices[index    ]].Height, 0);
-                float3 b = vertices[indices[index + 1]] + new float3(0, buffer[indices[index + 1]].Height, 0);
-                float3 c = vertices[indices[index + 2]] + new float3(0, buffer[indices[index + 2]].Height, 0);
+                var a = vertices[indices[index    ]] + new float3(0, buffer[indices[index    ]].Height, 0);
+                var b = vertices[indices[index + 1]] + new float3(0, buffer[indices[index + 1]].Height, 0);
+                var c = vertices[indices[index + 2]] + new float3(0, buffer[indices[index + 2]].Height, 0);
 
                 l = TerracedTriangle(a, b, c, ref v, ref u, ref i, l, maxHeight);
             }
         }
     }
+    
+    [BurstCompile]
+    public struct TerracedHexMapJob : IJob
+    {
+        [WriteOnly] public NativeList<float3>   v;
+        [WriteOnly] public NativeList<float2>   u;
+        [WriteOnly] public NativeList<int>      i;
+
+        [ReadOnly] public Entity entity;
+        [ReadOnly] public BufferFromEntity<HexCellDataBuffer> cellDataBufferFromEntity;
+
+        [ReadOnly] public int maxHeight;
+
+        public void Execute()
+        {
+            var cellDataBuffer = cellDataBufferFromEntity[entity];
+            
+            var l = 0;
+            for (var index = 0; index < cellDataBuffer.Length; index ++)
+            {
+                for(var j = 0; j < 6; j++)
+                {
+                    var a = (1 + j) % 7;
+                    var b = (2 + j) % 7;
+                
+                    b = b < 1 ? 1 : b;
+                    
+                    l = TerracedTriangle(
+                        cellDataBuffer[index][b], 
+                        cellDataBuffer[index][a], 
+                        cellDataBuffer[index][0], ref v, ref u, ref i, l, maxHeight);
+                }
+            }
+        }
+    }
+    
     public static int TerracedTriangle(float3 a, float3 b, float3 c, ref NativeList<float3> v, ref NativeList<float2> u, ref NativeList<int> t, int tindex, int maxAmplitude, float step = 0.5f)
     {
-        float uvY = 1f / maxAmplitude;
+        var uvY = 1f / maxAmplitude;
 
         // Minimum height value
-        float minHeight = math.floor(math.min(a.y, math.min(b.y, c.y)));
+        var minHeight = math.floor(math.min(a.y, math.min(b.y, c.y)));
 
         // Maximum height value
-        float maxHeight = math.floor(math.max(a.y, math.max(b.y, c.y)));
+        var maxHeight = math.floor(math.max(a.y, math.max(b.y, c.y)));
 
-        int tCount = tindex;
+        var tCount = tindex;
         float3 v1, v2, v3;
 
-        for (float i = minHeight; i <= maxHeight; i++)
+        for (var i = minHeight; i <= maxHeight; i++)
         {
-            float2 uv00 = new float2(0f, uvY * i                );
-            float2 uv01 = new float2(0f, uvY * i + (uvY * 0.95f));
-            float2 uv11 = new float2(1f, uvY * i + (uvY * 0.95f));
+            var uv00 = new float2(0f, uvY * i                );
+            var uv01 = new float2(0f, uvY * i + (uvY * 0.95f));
+            var uv11 = new float2(1f, uvY * i + (uvY * 0.95f));
 
             int state;
 

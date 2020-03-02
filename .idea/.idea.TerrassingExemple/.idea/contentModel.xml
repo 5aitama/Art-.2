@@ -5,15 +5,48 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="EndlessSettings.cs" t="Include" />
-          <e p="EndlessSystem.cs" t="Include" />
-          <e p="GameSettings.cs" t="Include" />
-          <e p="GridGenerator.cs" t="Include" />
-          <e p="MapPointBuffer.cs" t="Include" />
-          <e p="MapSettings.cs" t="Include" />
-          <e p="Terrassing.cs" t="Include" />
-          <e p="TerrassingMapBuildSystem.cs" t="Include" />
-          <e p="TerrassingMapInitializeSystem.cs" t="Include" />
+          <e p="Components" t="Include">
+            <e p="Buffers" t="Include">
+              <e p="HexCellBuffer.cs" t="Include" />
+              <e p="HexCellDataBuffer.cs" t="Include" />
+              <e p="MapPointBuffer.cs" t="Include" />
+            </e>
+            <e p="Tags" t="Include">
+              <e p="TagHexCell.cs" t="Include" />
+              <e p="TagHexMap.cs" t="Include" />
+              <e p="TagHexMapNeedBuild.cs" t="Include" />
+              <e p="TagHexMapNeedInitialize.cs" t="Include" />
+              <e p="TagTerracedMapNeedBuild.cs" t="Include" />
+              <e p="TagTerracedMapNeedInitialize.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Hexagon.cs" t="Include" />
+          <e p="Jobs" t="Include">
+            <e p="GridGenerator.cs" t="Include" />
+            <e p="Terrassing.cs" t="Include" />
+          </e>
+          <e p="MonoBehaviours" t="Include">
+            <e p="CameraController.cs" t="Include" />
+            <e p="GameSettings.cs" t="Include" />
+            <e p="HexagonTest.cs" t="Include" />
+          </e>
+          <e p="Scriptable" t="Include">
+            <e p="EndlessSettings.cs" t="Include" />
+            <e p="MapSettings.cs" t="Include" />
+          </e>
+          <e p="Systems" t="Include">
+            <e p="Endless" t="Include">
+              <e p="EndlessSystem.cs" t="Include" />
+            </e>
+            <e p="HexMap" t="Include">
+              <e p="HexMapBuildSystem.cs" t="Include" />
+              <e p="HexMapInitializeSystem.cs" t="Include" />
+            </e>
+            <e p="TerracedMap" t="Include">
+              <e p="TerracedMapBuildSystem.cs" t="Include" />
+              <e p="TerracedMapInitializeSystem.cs" t="Include" />
+            </e>
+          </e>
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

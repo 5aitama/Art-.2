@@ -15,8 +15,8 @@ MonoBehaviour:
   mapSize: 16
   noiseFrequency: 0.02
   noiseAmplitude: 32
-  noisePersistence: 0.5
-  noiseOctaves: 6
+  noisePersistence: 0.4
+  noiseOctaves: 8
   noisePosition:
     x: 0
     y: 0

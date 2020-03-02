@@ -27,10 +27,6 @@ public class TerracedMapInitializeSystem : JobComponentSystem
             var position = new float2(x, y);
             var noisePosition = position + NoisePosition;
 
-            // var noiseValue = noise.snoise(noisePosition * Frequency);
-            // noiseValue = (noiseValue + 1f) / 2f;
-            // noiseValue *= Amplitude;
-
             var noiseValue = OctavePerlin(noisePosition, Frequency, Amplitude, Octaves, Persistence);
             noiseValue *= Amplitude;
 
@@ -46,9 +42,10 @@ public class TerracedMapInitializeSystem : JobComponentSystem
             var maxValue = 0f;
             for(var i = 0; i < octaves; i++) 
             {
-                float n = noise.snoise(position * frequency);
+                var n = noise.snoise(position * frequency);
                 n = (n + 1f) / 2f;
                 n *= amplitude;
+                n = math.round(n);
                 total += n;
                 maxValue += amplitude;
                 amplitude *= persistence;
