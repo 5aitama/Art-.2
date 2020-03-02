@@ -1,6 +1,7 @@
 ![Header](/Images/Header.png)
 # Art .2
 A terraced like procedural terrain made with **Unity** & **DOTS**.
+> You can now follow the progress of the project [here](https://app.milanote.com/1J8Geg1OQc8K19).
 
 ## Description
 In this project, the player was in infinite world.
