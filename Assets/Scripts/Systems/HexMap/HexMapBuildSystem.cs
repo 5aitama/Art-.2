@@ -49,8 +49,6 @@ public class HexMapBuildSystem : ComponentSystem
             mesh.SetUVs<float2>(0, u);
             mesh.RecalculateNormals();
             
-            Debug.Log($"{mesh.vertices.Length} vertices");
-            
             v.Dispose();
             i.Dispose();
             u.Dispose();

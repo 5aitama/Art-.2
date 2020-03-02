@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4694a1ac7e964e898170af0d0ed818db, type: 3}
   m_Name: Endless Settings
   m_EditorClassIdentifier: 
-  isActivated: 0
+  isActivated: 1
   chunkPerAxis: 8
